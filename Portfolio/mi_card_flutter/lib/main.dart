@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue,
@@ -17,14 +18,40 @@ class MyApp extends StatelessWidget {
             child: Text("Working With Stateless Widget"),
           ),
         ),
-        body: const Center(
-          child: Text('My name is Antoine Gaton and I am a developer.'),
-        ),
-        floatingActionButton: const FloatingActionButton(
-          backgroundColor: Colors.blue,
-          child: Icon(Icons.add),
+        body: SafeArea(
+            child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Container(
+              height: 150.0,
+              width: 150.0,
+              color: Colors.greenAccent,
+              child: const Text("Container #1"),
             ),
-        ),
+            const SizedBox(
+              height: 20.0,
+            ),
+            Container(
+              height: 150.0,
+              width: 150.0,
+              color: Colors.redAccent,
+              child: const Text("Container #2"),
+            ),
+            const SizedBox(
+              height: 20.0,
+            ),
+            Container(
+              height: 150.0,
+              width: 150.0,
+              color: Colors.orangeAccent,
+              child: const Text("Container #3"),
+            ),
+            const SizedBox(
+              height: 20.0,
+            ),
+          ],
+        )),
       ),
     );
   }
