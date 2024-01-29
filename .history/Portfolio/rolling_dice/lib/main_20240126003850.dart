@@ -1,6 +1,5 @@
 // this import is for the material design
 import 'package:flutter/material.dart';
-import 'package:rolling_dice/gradient_container.dart';
 
 void main() {
   runApp(
@@ -8,16 +7,19 @@ void main() {
       // this is the main widget
       debugShowCheckedModeBanner: false, // remove the debug banner
       home: Scaffold(
+        backgroundColor: Color.fromARGB(255, 230, 60, 60),
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 245, 36, 36),
           title: const Center(
-            child: Text(
-              "Dice Generator",
-              style: TextStyle(color: Colors.white),
-            ),
+            child: Text("Dice Generator"),
+          ),
+          backgroundColor: Color.fromARGB(255, 230, 60, 60),
+        ),
+        body: Container(
+          decoration: BoxDecoration(),
+          child: Center(
+            child: Text("Hello World! Welcome Antoine to your first app..."),
           ),
         ),
-        body: const GradientContainer(),
       ),
     ),
   ); //runApp

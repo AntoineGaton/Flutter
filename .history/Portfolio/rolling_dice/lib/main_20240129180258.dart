@@ -9,15 +9,12 @@ void main() {
       debugShowCheckedModeBanner: false, // remove the debug banner
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 245, 36, 36),
-          title: const Center(
-            child: Text(
-              "Dice Generator",
-              style: TextStyle(color: Colors.white),
-            ),
+          backgroundColor: Color.fromARGB(255, 245, 36, 36),
+          title: Center(
+            child: Text("Dice Generator"),
           ),
         ),
-        body: const GradientContainer(),
+        body: GradientContainer(),
       ),
     ),
   ); //runApp
