@@ -2,9 +2,6 @@
 import 'package:flutter/material.dart';
 import 'package:rolling_dice/gradient_container.dart';
 
-const Color gradientColor1 = Color.fromARGB(255, 245, 36, 36);
-const Color gradientColor2 = Color.fromARGB(255, 206, 8, 8);
-
 void main() {
   runApp(
     MaterialApp(
@@ -20,7 +17,7 @@ void main() {
             ),
           ),
         ),
-        body: const GradientContainer(gradientColor1, gradientColor2),
+        body: const GradientContainer([Colors.deepPurple, ]),
       ),
     ),
   ); //runApp

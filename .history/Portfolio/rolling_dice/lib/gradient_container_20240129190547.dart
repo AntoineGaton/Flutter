@@ -8,10 +8,9 @@ const message = "Welcome Antoine to your first app...";
 // Custom Widget
 class GradientContainer extends StatelessWidget {
   //constructor
-  const GradientContainer(this.color1, this.color2, {super.key});
+  const GradientContainer(this.colors, {super.key});
 
-  final Color color1;
-  final Color color2;
+  final List<Color> colors;
 
   // an annotation that overrides the build method
   @override
@@ -19,7 +18,7 @@ class GradientContainer extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [color1, color2],
+          colors: colors,
           begin: startAlignment,
           end: endAlignment,
         ),

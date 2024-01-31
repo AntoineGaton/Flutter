@@ -10,8 +10,7 @@ class GradientContainer extends StatelessWidget {
   //constructor
   const GradientContainer(this.color1, this.color2, {super.key});
 
-  final Color color1;
-  final Color color2;
+  final Colorcolors;
 
   // an annotation that overrides the build method
   @override
@@ -19,7 +18,7 @@ class GradientContainer extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [color1, color2],
+          colors: colors,
           begin: startAlignment,
           end: endAlignment,
         ),

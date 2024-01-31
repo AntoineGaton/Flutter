@@ -20,7 +20,7 @@ void main() {
             ),
           ),
         ),
-        body: const GradientContainer(gradientColor1, gradientColor2),
+        body: const GradientContainer(gradient_color1, gradient_color2),
       ),
     ),
   ); //runApp
